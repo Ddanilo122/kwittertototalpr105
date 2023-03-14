@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salas Kwitter</title>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="chat_room.js"></script>
+
+<link rel="stylesheet" type="text/css"href="style.css">
+
+</head>
+<body onload="carregar()">
+<div class="container">
+    <button onclick="sair()" class="btn btn-danger" id="saida">SAIDA</button>
+    
+    <center>
+<h1 class="header">
+    Kwitter
+    <sup>
+        <img src="m2.png">
+    </sup>
+    </h1>
+    <h3 id="nome" class="nome1"></h3>
+
+    <div class="form-group input_div room_page">
+        <label>ADICIONAR SALA:</label>
+        <input id="iptsala" class="form-control" placeholder="NOME DA SALA">
+    </div>
+    <button onclick="addSala()" class="btn btn-primary">ADICIONAR SALA</button>
+
+    <h3 class="cw">SALAS DISPONIVEIS</h3>
+    <div id="output"></div> 
+
+
+    </center>
+</div>
+
+<script src="chat_room.js"></script>
+</body>
